@@ -14,14 +14,11 @@
     "adminPasswordOrKey": {
       "value": "Independent12#"
     },
-    "dnsLabelPrefix": {
-      "value": "[toLower(format('{0}-{1}', parameters('vmName'), uniqueString(resourceGroup().id)))]"
-    },
     "ubuntuOSVersion": {
       "value": "18.04-LTS"
     },
     "location": {
-      "value": "[resourceGroup().location]"
+      "value": "Central India"
     },
     "vmSize": {
       "value": "Standard_B2s"
