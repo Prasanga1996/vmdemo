@@ -241,7 +241,7 @@
           ]
         },
         "osProfile": {
-	      "customData": "[base64(concat('runcmd:\n- sudo apt update -y\n- sudo apt install nginx -y\n- sudo systemctl start nginx'))]",
+	      "customData": "[base64(concat('#cloud-config\n\nruncmd:\n- sudo apt install nginx -y'))]",
           "computerName": "[parameters('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
           "adminPassword": "[parameters('adminPasswordOrKey')]",
